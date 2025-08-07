@@ -1,6 +1,12 @@
 <!--화면의 요소는 temaplate 안에 코딩-->
 <template>
-
+  <!--vue(vuetify)에서는 모든 태그의 최상단에 v-app으로 감싸져 있어야 정상적으로 동작-->
+  <!-- <v-app> -->
+    <!--header, footer를 제외한 실질적인 화면의 내용 v-main안에 들어감-->
+    <!-- <v-main> -->
+      <router-view/>
+    <!-- </v-main> -->
+  <!-- </v-app> -->
 </template>
 
 <!-- js코드는 script안에 코딩-->

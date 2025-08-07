@@ -1,7 +1,18 @@
+import TestVue from "@/components/0.TestVue.vue"
 import { createRouter, createWebHistory } from "vue-router"
 
 // routes에서 url 경로와 화면을 매핑시켜준다.
-const routes = []
+const routes = [
+    {
+        path:"/test",
+        name: "TestVue",
+        component: TestVue
+    },
+    {
+        
+    }
+
+]
 
 const router = createRouter(
 {
