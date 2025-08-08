@@ -37,6 +37,7 @@ import axios from 'axios';
             }
         },
         // 화면이 열림과 동시에 실행되는 hook함수: created
+        // axios쓰면 try catch 매우매우매우 높은 확률로 해야함
         async created() {
             const response = await axios.get("http://localhost:8080/product/list");
             this.productList = response.data.response.content;
